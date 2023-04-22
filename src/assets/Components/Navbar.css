@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+.navbar{
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar .nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E2E60;
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.nav-contact a{
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-networks a{
+    margin-left: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1EDB62;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+}
+
+.nav .logo{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav .nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    list-style-type: none;
+}
+
+.nav-menu a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.nav-menu a:hover{
+    background-color: #1E2E60;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 2px;
+}
+
+.nav-menu i{
+    margin-left: 5px;
+}
+
+.nav .hamburger{
+    display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 920px){
+    .navbar .nav-header{
+        padding: 15px 0px;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    }
+
+    .navbar .nav-contact{
+        display: flex;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+    .nav-contact a{
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+    .navbar .nav{
+        padding: 10px 20px;
+    }
+    .nav .nav-menu{
+        position: absolute;
+        flex-direction: column;
+        background-color: #1EDB62;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        top: 3vh;
+        padding-top: 40px;
+        height: 0vh;
+        z-index: -1;
+        transition: .5s ease-in-out;
+    }
+    .nav-menu li{
+        margin-top: 60px;
+        display: none;
+    }
+    .nav-menu a{
+        font-size: 1.3rem;
+    }
+    .nav .hamburger{
+        display: block;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .nav .nav-menu.active{
+        height: 65vh;
+    }
+    .nav-menu.active li{
+        display: block;
+    }
+}
