@@ -4,11 +4,6 @@ import Image from '../../images/img-1.jpg'
 import Image2 from '../../images/img-2.jpg'
 
 const About = () => {
-
-  const [click, setClick] = useState(false)
-
-  const imgClick = () => setClick(!click)
-
   return (
     <>
       <div className='section-head'>
