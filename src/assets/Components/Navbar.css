@@ -88,8 +88,8 @@
     }
 
     .nav-contact a{
-        font-size: 1.3rem;
-        margin-bottom: 15px;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
     }
     .navbar .nav{
         padding: 10px 20px;
@@ -97,12 +97,12 @@
     .nav .nav-menu{
         position: absolute;
         flex-direction: column;
-        background-color: #1EDB62;
+        background-color: #1edb63fd;
         width: 100%;
         left: 0;
         text-align: center;
-        top: 21vh;
-        padding-top: 40px;
+        top: 22vh;
+        padding-top: 0px;
         height: 0vh;
         transition: .5s ease-in-out;
     }
