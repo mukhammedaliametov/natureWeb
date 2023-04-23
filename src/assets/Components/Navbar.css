@@ -32,9 +32,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1EDB62;
+    background-color: #1edb63;
     padding: 20px 40px;
     width: 100%;
+}
+
+.nav.active{
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 8px #fff;
+    z-index: 2;
+    background-color: #1edb63fd;
 }
 
 .nav .logo{

@@ -5,11 +5,23 @@ import './Navbar.css'
 const Navbar = () => {
 
   const [click, setState] = useState(false);
+  const [navbar, setNavbar] = useState(false)
+
   const handleClick = () => setState(!click)
   const closeMobileMenu = () => setState(false)
 
+  const changeBackground = () => {
+    if(window.scrollY >= 45){
+      setNavbar(true)
+    }else{
+      setNavbar(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground)
+
   return (
-    <div className="navbar">
+    <div className='navbar'>
       <div className="nav-header">
         <div className="nav-contact">
           <a href="">
@@ -27,7 +39,7 @@ const Navbar = () => {
           <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
       </div>
-      <div className='nav'>
+      <div className={navbar ? 'nav active' : 'nav'}>
         <h1 className='logo'>
           Nature <i class="fa-sharp fa-solid fa-leaf"></i>
         </h1>
