@@ -106,12 +106,13 @@
         position: absolute;
         flex-direction: column;
         background-color: #1edb63fd;
-        width: 100%;
-        left: 0;
+        width: 0%;
+        left: 0vh;
+        right: 100vh;
         text-align: center;
-        top: 22.8vh;
         padding-top: 0px;
-        height: 0vh;
+        margin-top: 70.8vh;
+        height: 65vh;
         transition: .5s ease-in-out;
     }
     .nav-menu li{
@@ -127,7 +128,7 @@
         color: #fff;
     }
     .nav .nav-menu.active{
-        height: 65vh;
+        width: 100%;
     }
     .nav-menu.active li{
         display: block;
