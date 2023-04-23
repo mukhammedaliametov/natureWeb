@@ -1,0 +1,122 @@
+.footer{
+    background-color: #1EDB62;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer i{
+    color: #fff;
+}
+
+.footer .first-footer{
+    background-color: #1EDB62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+.first-footer i{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 1.2rem;  
+}
+
+.footer .second-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 40px;
+    border-top: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.second-footer .company-info{
+    width: 30%;
+    border-right: 3px solid #fff;
+}
+
+.company-info h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 6px;
+    margin-top: 30px;
+}
+
+.pages-links{
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.pages-links h2{
+    margin-bottom: 10px;
+}
+
+.pages-links .links{
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer .footer-end{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #1EDB62;
+    border-top:  2px solid #fff;
+}
+
+.footer .footer-contact{
+    padding: 0px 10px;
+    border-left: 2px solid #fff;
+    padding-left: 30px;
+}
+
+.footer-contact .informations{
+    display: flex;
+    flex-direction: column;
+}
+
+.informations h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.informations a{
+    color: blue;
+    margin-top: 16px;
+}
+
+@media only screen and (max-width: 920px){
+    .second-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-footer .company-info{
+        width: 100%;
+        border-right: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #fff;
+    }
+
+    .footer .footer-contact{
+        border-left: none;
+        border-top: 2px solid #fff;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .footer-contact p{
+        font-size: 1rem;
+    }
+}

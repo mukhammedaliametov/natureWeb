@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <video src={Video} autoPlay loop muted></video>
-            <div className='home-section'>
+            <div className='home-section' data-aos="fade-down" data-aos-duration='3000'>
                 <h1>
                     Nature <i class="fa-sharp fa-solid fa-leaf"></i>
                 </h1>

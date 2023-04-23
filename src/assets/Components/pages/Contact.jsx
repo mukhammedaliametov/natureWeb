@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="section-head">
                 <h1>Contact</h1>
             </div>
-            <div className="contact-section">
+            <div className="contact-section" data-aos="fade-down" data-aos-duration='3000'>
                 <div className="forms">
                     <form>
                         <label htmlFor="name">Name</label><br />

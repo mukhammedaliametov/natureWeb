@@ -12,7 +12,7 @@ const Services = () => {
         <div className="card-content">
           {servicesItems.map((item, index) => {
             return (
-              <div key={index} className='card'>
+              <div key={index} className='card' data-aos={item.dataaos} data-aos-duration="2000">
                 <img src={item.img} asd alt="" />
                 <h1>{item.title}</h1>
                 <p>{item.info}</p>
@@ -24,7 +24,7 @@ const Services = () => {
         <div className="card-content">
           {servicesItems1.map((item, index) => {
             return (
-              <div key={index} className='card'>
+              <div key={index} className='card' data-aos={item.dataaos} data-aos-duration="2000">
                 <img src={item.img} asd alt="" />
                 <h1>{item.title}</h1>
                 <p>{item.info}</p>
