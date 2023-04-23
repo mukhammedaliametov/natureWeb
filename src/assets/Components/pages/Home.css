@@ -59,21 +59,28 @@ video{
 
 @media only screen and (max-width: 960px){
     .home-section{
-        /* background-image: url(../../images/img-3.jpg); */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.39);
         margin: 10px 0px;
         padding: 60px;
-        margin-top: 2rem;
+        margin-top: 4rem;
         border-radius: 1.2rem;
     }
 
     .home-section h1{
-        font-family: 'Montserrat Alternates', sans-serif;
-        color: #fff;
         font-size: 2rem;
+    }
+    .home-section h3{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .home-section p{
+        font-size: 1.1rem;
+    }
+    .home-section a{
+        margin: 0px 5px;
+        background: #1EDB62;
+        padding: 15px 12px;
+        border-radius: 1.2rem;
+        color: #fff;
+        font-size: 1.1rem;
     }
 }
